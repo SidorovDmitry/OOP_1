@@ -1,7 +1,10 @@
 import json
-from src.product import Product
+
 from src.category import Category
+from src.product import Product
+
 # from config import FILE_PATH_JSON
+
 
 def read_file_json(filename=None):
     """Функция для чтения JSON-файла и обработки возможных ошибок при его открытии и чтении"""
@@ -9,21 +12,21 @@ def read_file_json(filename=None):
     try:
 
         with open(filename, "r", encoding="utf-8") as f:
-#             logger.info("Открытие JSON-файла")
+            #             logger.info("Открытие JSON-файла")
             data = json.load(f)
 
         # Проверяем, что данные представляют собой список
         if not isinstance(data, list):
-#             logger.error("Ошибка обработки файла")
+            #             logger.error("Ошибка обработки файла")
             return []
 
         return data
-    except FileNotFoundError as e:
-#         logger.error(f"Файл не найден {e}")
+    except FileNotFoundError:
+        #         logger.error(f"Файл не найден {e}")
         print(f"Файл не найден по пути: {filename}")
         return []
-    except json.JSONDecodeError as e:
-#         logger.error(f"Ошибка при декодировании JSON из файла {e}")
+    except json.JSONDecodeError:
+        #         logger.error(f"Ошибка при декодировании JSON из файла {e}")
         print(f"Ошибка при декодировании JSON из файла: {filename}")
         return []
 
