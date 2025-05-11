@@ -25,3 +25,15 @@ def input_data_bu_category() -> Category:
         "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни",
         products=[product],
     )
+
+@pytest.fixture
+def product_category() -> Category:
+    """осуществляет возврат Класс Сategory"""
+    products = [Product("Iphone 16PRO", "Smartphone", 107990, 2)]
+    return Category("Мобильная электроника", "Smartphone", products)
+
+@pytest.fixture
+def category_item() -> Category:
+    # Создаем список товаров (с одним товаром)
+    products = [Product("Samsung QLED", "4K TV", 50000, 5)]
+    return Category("Телевизоры", "Устройство отображения фильмов и тв-передач", products)
