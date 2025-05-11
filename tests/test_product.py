@@ -1,6 +1,7 @@
-from src.product import Product
-from src.category import Category
 from unittest.mock import patch
+
+from src.category import Category
+from src.product import Product
 
 
 def test_out_data_product(input_data_bu_product):
@@ -21,12 +22,10 @@ def test_incorrect_output(input_incorrect_data):
     assert input_incorrect_data.quantity == 0
 
 
-
 def test_price_setter_lower_price_confirm_yes(product_category):
     with patch("builtins.input", return_value="y"):
         product_category.price = 100000
     assert product_category.price == 100000
-
 
 
 def test_category_initialization(product_category):
@@ -34,6 +33,7 @@ def test_category_initialization(product_category):
     assert product_category.description == "Smartphone"
     assert Category.category_count >= 1
     assert Category.product_count >= 1
+
 
 def test_product_price_setter_negative():
     """Тест, что цена не может быть отрицательной"""

@@ -12,7 +12,6 @@ class Product:
         self.__price = price
         self.quantity = quantity
 
-
     @classmethod
     def new_product(cls, products_dict, products_list):
         """
@@ -35,7 +34,7 @@ class Product:
         products_list.append(new_product)
         return new_product
 
-    @property# type: ignore
+    @property  # type: ignore
     def price(self):
         """Вызов цены в приватном статусе"""
         return self.__price

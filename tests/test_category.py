@@ -19,6 +19,7 @@ def test_wrong_product_category(product_category):
     assert Category.category_count != 3
     assert Category.product_count != 0
 
+
 def test_category_edge_cases(input_data_bu_category):
     """Тест проверяет обработку граничных случаев."""
     # Проверка типов данных
@@ -45,7 +46,7 @@ def test_add_product_increases_count(category_item):
 
     category_item.add_product(new_product)
 
-    assert len(category_item._Category__products) == 2 # type: ignore
+    assert len(category_item._Category__products) == 2  # type: ignore
     assert Category.product_count == initial_count + 1
 
 
@@ -55,7 +56,7 @@ def test_add_product_correctly_adds(category_item):
 
     category_item.add_product(new_product)
 
-    assert category_item._Category__products[-1] == new_product # type: ignore
+    assert category_item._Category__products[-1] == new_product  # type: ignore
 
 
 def test_products_property_returns_string(category_item):

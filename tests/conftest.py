@@ -26,11 +26,13 @@ def input_data_bu_category() -> Category:
         products=[product],
     )
 
+
 @pytest.fixture
 def product_category() -> Category:
     """осуществляет возврат Класс Сategory"""
     products = [Product("Iphone 16PRO", "Smartphone", 107990, 2)]
     return Category("Мобильная электроника", "Smartphone", products)
+
 
 @pytest.fixture
 def category_item() -> Category:
