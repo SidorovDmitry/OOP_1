@@ -55,3 +55,16 @@ class Product:
 
         self.__price = new_price
         print(f"Цена успешно изменена на {self.__price}")
+
+    def __str__(self):
+        """Метод отображения информации об объекте класса для пользователя"""
+
+        return f"{self.name}, {self.__price} руб. Остаток: {self.quantity} шт."
+
+    def __add__(self, other):
+        """Метод сложения продуктов, считающий их полную стоимость"""
+
+        if not isinstance(other, Product):
+            raise TypeError("Можно складывать только объекты класса Product")
+
+        return (self.price * self.quantity) + (other.price * other.quantity)
