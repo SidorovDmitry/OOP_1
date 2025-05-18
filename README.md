@@ -34,12 +34,14 @@ OOP_1/                              # Корневая директория пр
 ├── src/                            # 🐍 Исходный код
 │   ├── __init__.py                 # 📦 Инициализация Python-пакета
 │   ├── category.py                 # 🏷️ Класс Category (категории товаров)
+│   ├── iter.py                     # 🛒 Класс CategoryIterator (итератор категории товаров)
 │   ├── product.py                  # 🛒 Класс Product (описание товаров)
 │   └── utils.py                    # ⚙️ Вспомогательные утилиты
 │
 ├── tests/                          # 🧪 Тесты (pytest)
 │   ├── __init__.py                 # 📦 Инициализация тестового пакета
 │   ├── conftest.py                 # 🔧 Общие фикстуры pytest
+│   ├── test_iter.py                # ✅ Тесты для iter.py
 │   ├── test_category.py            # ✅ Тесты для category.py
 │   └── test_product.py             # ✅ Тесты для product.py
 │
