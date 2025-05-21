@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Coverage for src\product.py: 82%</title>
+    <title>Coverage for src\product.py: 88%</title>
     <link rel="icon" sizes="32x32" href="favicon_32_cb_58284776.png">
     <link rel="stylesheet" href="style_cb_718ce007.css" type="text/css">
     <script src="coverage_html_cb_497bf287.js" defer></script>
@@ -12,7 +12,7 @@
     <div class="content">
         <h1>
             <span class="text">Coverage for </span><b>src\product.py</b>:
-            <span class="pc_cov">82%</span>
+            <span class="pc_cov">88%</span>
         </h1>
         <aside id="help_panel_wrapper">
             <input id="help_panel_state" type="checkbox">
@@ -54,8 +54,8 @@
             </div>
         </aside>
         <h2>
-            <span class="text">45 statements &nbsp;</span>
-            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">37<span class="text"> run</span></button>
+            <span class="text">66 statements &nbsp;</span>
+            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">58<span class="text"> run</span></button>
             <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">8<span class="text"> missing</span></button>
             <button type="button" class="exc show_exc button_toggle_exc" value="exc" data-shortcut="x" title="Toggle lines excluded">0<span class="text"> excluded</span></button>
         </h2>
@@ -65,7 +65,7 @@
             <a id="nextFileLink" class="nav" href="z_145eef247bfb46b6_utils_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.8.0">coverage.py v7.8.0</a>,
-            created at 2025-05-18 11:51 +0300
+            created at 2025-05-21 22:07 +0300
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"></button>
@@ -150,6 +150,39 @@
     <p class="mis show_mis"><span class="n"><a id="t68" href="#t68">68</a></span><span class="t">            <span class="key">raise</span> <span class="nam">TypeError</span><span class="op">(</span><span class="str">"&#1052;&#1086;&#1078;&#1085;&#1086; &#1089;&#1082;&#1083;&#1072;&#1076;&#1099;&#1074;&#1072;&#1090;&#1100; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1099; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; Product"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t69" href="#t69">69</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t70" href="#t70">70</a></span><span class="t">        <span class="key">return</span> <span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">price</span> <span class="op">*</span> <span class="nam">self</span><span class="op">.</span><span class="nam">quantity</span><span class="op">)</span> <span class="op">+</span> <span class="op">(</span><span class="nam">other</span><span class="op">.</span><span class="nam">price</span> <span class="op">*</span> <span class="nam">other</span><span class="op">.</span><span class="nam">quantity</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t71" href="#t71">71</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t72" href="#t72">72</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t73" href="#t73">73</a></span><span class="t"><span class="key">class</span> <span class="nam">Smartphone</span><span class="op">(</span><span class="nam">Product</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t74" href="#t74">74</a></span><span class="t">    <span class="str">"""&#1050;&#1083;&#1072;&#1089;&#1089; &#171;&#1057;&#1084;&#1072;&#1088;&#1090;&#1092;&#1086;&#1085;&#187; (Smartphone) &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085; &#1072;&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1072;&#1084;&#1080;: &#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100; (efficiency), &#1084;&#1086;&#1076;&#1077;&#1083;&#1100; (model),</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t75" href="#t75">75</a></span><span class="t"><span class="str">    &#1086;&#1073;&#1098;&#1077;&#1084; &#1074;&#1089;&#1090;&#1088;&#1086;&#1077;&#1085;&#1085;&#1086;&#1081; &#1087;&#1072;&#1084;&#1103;&#1090;&#1080; (memory), &#1094;&#1074;&#1077;&#1090; (color)."""</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t76" href="#t76">76</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t77" href="#t77">77</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">name</span><span class="op">,</span> <span class="nam">description</span><span class="op">,</span> <span class="nam">price</span><span class="op">,</span> <span class="nam">quantity</span><span class="op">,</span> <span class="nam">efficiency</span><span class="op">,</span> <span class="nam">model</span><span class="op">,</span> <span class="nam">memory</span><span class="op">,</span> <span class="nam">color</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t78" href="#t78">78</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="nam">name</span><span class="op">,</span> <span class="nam">description</span><span class="op">,</span> <span class="nam">price</span><span class="op">,</span> <span class="nam">quantity</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t79" href="#t79">79</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">efficiency</span> <span class="op">=</span> <span class="nam">efficiency</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t80" href="#t80">80</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">model</span> <span class="op">=</span> <span class="nam">model</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t81" href="#t81">81</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">memory</span> <span class="op">=</span> <span class="nam">memory</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t82" href="#t82">82</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">color</span> <span class="op">=</span> <span class="nam">color</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t83" href="#t83">83</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t84" href="#t84">84</a></span><span class="t">    <span class="key">def</span> <span class="nam">__add__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">other</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t85" href="#t85">85</a></span><span class="t">        <span class="key">if</span> <span class="nam">type</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span> <span class="key">is</span> <span class="key">not</span> <span class="nam">type</span><span class="op">(</span><span class="nam">other</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t86" href="#t86">86</a></span><span class="t">            <span class="key">raise</span> <span class="nam">TypeError</span><span class="op">(</span><span class="str">"&#1053;&#1077;&#1083;&#1100;&#1079;&#1103; &#1089;&#1082;&#1083;&#1072;&#1076;&#1099;&#1074;&#1072;&#1090;&#1100; &#1090;&#1086;&#1074;&#1072;&#1088;&#1099; &#1088;&#1072;&#1079;&#1085;&#1099;&#1093; &#1082;&#1083;&#1072;&#1089;&#1089;&#1086;&#1074;"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t87" href="#t87">87</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">price</span> <span class="op">+</span> <span class="nam">other</span><span class="op">.</span><span class="nam">price</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t88" href="#t88">88</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t89" href="#t89">89</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t90" href="#t90">90</a></span><span class="t"><span class="key">class</span> <span class="nam">LawnGrass</span><span class="op">(</span><span class="nam">Product</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t91" href="#t91">91</a></span><span class="t">    <span class="str">"""&#1050;&#1083;&#1072;&#1089;&#1089; &#171;&#1058;&#1088;&#1072;&#1074;&#1072; &#1075;&#1072;&#1079;&#1086;&#1085;&#1085;&#1072;&#1103;&#187; (LawnGrass) &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085; &#1072;&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1072;&#1084;&#1080;: &#1089;&#1090;&#1088;&#1072;&#1085;&#1072; - &#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;( country), &#1089;&#1088;&#1086;&#1082;</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t92" href="#t92">92</a></span><span class="t"><span class="str">    &#1087;&#1088;&#1086;&#1088;&#1072;&#1089;&#1090;&#1072;&#1085;&#1080;&#1103;(germination_period), &#1094;&#1074;&#1077;&#1090;(color)."""</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t93" href="#t93">93</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t94" href="#t94">94</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">name</span><span class="op">,</span> <span class="nam">description</span><span class="op">,</span> <span class="nam">price</span><span class="op">,</span> <span class="nam">quantity</span><span class="op">,</span> <span class="nam">country</span><span class="op">,</span> <span class="nam">germination_period</span><span class="op">,</span> <span class="nam">color</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t95" href="#t95">95</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="nam">name</span><span class="op">,</span> <span class="nam">description</span><span class="op">,</span> <span class="nam">price</span><span class="op">,</span> <span class="nam">quantity</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t96" href="#t96">96</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">country</span> <span class="op">=</span> <span class="nam">country</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t97" href="#t97">97</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">germination_period</span> <span class="op">=</span> <span class="nam">germination_period</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t98" href="#t98">98</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">color</span> <span class="op">=</span> <span class="nam">color</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t99" href="#t99">99</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t100" href="#t100">100</a></span><span class="t">    <span class="key">def</span> <span class="nam">__add__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">other</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t101" href="#t101">101</a></span><span class="t">        <span class="key">if</span> <span class="nam">type</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span> <span class="key">is</span> <span class="key">not</span> <span class="nam">type</span><span class="op">(</span><span class="nam">other</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t102" href="#t102">102</a></span><span class="t">            <span class="key">raise</span> <span class="nam">TypeError</span><span class="op">(</span><span class="str">"&#1053;&#1077;&#1083;&#1100;&#1079;&#1103; &#1089;&#1082;&#1083;&#1072;&#1076;&#1099;&#1074;&#1072;&#1090;&#1100; &#1090;&#1086;&#1074;&#1072;&#1088;&#1099; &#1088;&#1072;&#1079;&#1085;&#1099;&#1093; &#1082;&#1083;&#1072;&#1089;&#1089;&#1086;&#1074;"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t103" href="#t103">103</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">price</span> <span class="op">+</span> <span class="nam">other</span><span class="op">.</span><span class="nam">price</span>&nbsp;</span><span class="r"></span></p>
 </main>
 <footer>
     <div class="content">
@@ -159,7 +192,7 @@
             <a class="nav" href="z_145eef247bfb46b6_utils_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.8.0">coverage.py v7.8.0</a>,
-            created at 2025-05-18 11:51 +0300
+            created at 2025-05-21 22:07 +0300
         </p>
     </div>
 </footer>
