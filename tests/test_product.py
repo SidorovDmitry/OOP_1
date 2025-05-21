@@ -66,7 +66,7 @@ def test_new_product_creates_new_if_no_duplicate():
     assert len(products_list) == 1
 
 
-def test_smartfone_check(smartphone_item: Smartphone):
+def test_smartfone_check(smartphone_item):
     """Тест инициализации объекта класса Smartphone"""
     assert smartphone_item.name == "Iphone"
     assert smartphone_item.description == "Американский Смартфон"
@@ -77,7 +77,7 @@ def test_smartfone_check(smartphone_item: Smartphone):
     assert smartphone_item.color == "Gold"
 
 
-def test_lawngrass_item_check(lawngrass_item: LawnGrass):
+def test_lawngrass_item_check(lawngrass_item):
     """Тест инициализации объекта класса LawnGrass"""
     assert lawngrass_item.name == "Зелёный ковер"
     assert lawngrass_item.description == "Газонная трава"
@@ -88,7 +88,7 @@ def test_lawngrass_item_check(lawngrass_item: LawnGrass):
     assert lawngrass_item.color == "Зеленая"
 
 
-def test_add_method_smartphone(smartphone_item: Smartphone):
+def test_add_method_smartphone(smartphone_item):
     """Тест сложения объектов класса Smartphone"""
     smartphone_new = Smartphone("Iphone", "512GB, Красный цвет, 12MP камера", 300000.0, 4, 19.0, "16Pro", 32, "Red")
     smartphone_sum = smartphone_new + smartphone_item
@@ -106,7 +106,7 @@ def test_add_method_smartphone_rise_call():
         assert smartphone_sum
 
 
-def test_add_method_lawngrass(lawngrass_item: LawnGrass):
+def test_add_method_lawngrass(lawngrass_item):
     """Тест сложения объектов класса LawnGrass"""
     lawngrass_new = LawnGrass("Лесной ковёр", "Газонная трава", 1000, 30, "Россия", "2 месяца", "Зеленая")
 
