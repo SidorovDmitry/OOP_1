@@ -68,3 +68,36 @@ class Product:
             raise TypeError("Можно складывать только объекты класса Product")
 
         return (self.price * self.quantity) + (other.price * other.quantity)
+
+
+class Smartphone(Product):
+    """Класс «Смартфон» (Smartphone) расширен атрибутами: производительность (efficiency), модель (model),
+    объем встроенной памяти (memory), цвет (color)."""
+
+    def __init__(self, name, description, price, quantity, efficiency, model, memory, color):
+        super().__init__(name, description, price, quantity)
+        self.efficiency = efficiency
+        self.model = model
+        self.memory = memory
+        self.color = color
+
+    def __add__(self, other):
+        if type(self) is not type(other):
+            raise TypeError("Нельзя складывать товары разных классов")
+        return self.price + other.price
+
+
+class LawnGrass(Product):
+    """Класс «Трава газонная» (LawnGrass) расширен атрибутами: страна - производитель( country), срок
+    прорастания(germination_period), цвет(color)."""
+
+    def __init__(self, name, description, price, quantity, country, germination_period, color):
+        super().__init__(name, description, price, quantity)
+        self.country = country
+        self.germination_period = germination_period
+        self.color = color
+
+    def __add__(self, other):
+        if type(self) is not type(other):
+            raise TypeError("Нельзя складывать товары разных классов")
+        return self.price + other.price
