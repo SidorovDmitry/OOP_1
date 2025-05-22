@@ -1,7 +1,7 @@
 import pytest
 
 from src.category import Category
-from src.product import Product
+from src.product import Product, Smartphone, LawnGrass
 
 
 @pytest.fixture
@@ -39,3 +39,15 @@ def category_item() -> Category:
     # Создаем список товаров (с одним товаром)
     products = [Product("Samsung QLED", "4K TV", 50000, 5)]
     return Category("Телевизоры", "Устройство отображения фильмов и тв-передач", products)
+
+
+@pytest.fixture
+def smartphone_item() -> Product:
+    """осуществляет возврат Класс Smartphone"""
+    return Smartphone("Iphone", "Американский Смартфон", 12000, 20, 20.0, "16 PRO", 512, "Gold")
+
+
+@pytest.fixture
+def lawngrass_item() -> Product:
+    """осуществляет возврат Класс LawnGrass"""
+    return LawnGrass("Зелёный ковер", "Газонная трава", 1000, 500, "Россия", "3 месяца", "Зеленая")
