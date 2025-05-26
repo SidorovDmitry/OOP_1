@@ -1,4 +1,8 @@
-class Product:
+from src.base_product import BaseProduct
+from src.miksin_print import PrintMixin
+
+
+class Product(BaseProduct, PrintMixin):
     """Создание класса Product"""
 
     name: str  # Имя продукта
@@ -11,6 +15,7 @@ class Product:
         self.description = description
         self.__price = price
         self.quantity = quantity
+        super().__init__()
 
     @classmethod
     def new_product(cls, products_dict, products_list):
