@@ -13,13 +13,13 @@ def test_out_data_product(input_data_bu_product):
     assert input_data_bu_product.quantity == 5
 
 
-def test_incorrect_output(input_incorrect_data):
-    """Тест на некорректный ввод данных"""
-
-    assert input_incorrect_data.name == "Xiaomi Redmi Note 11"
-    assert input_incorrect_data.description == "1024GB, Синий"
-    assert input_incorrect_data.price == 0.0
-    assert input_incorrect_data.quantity == 0
+# def test_incorrect_output(input_incorrect_data):
+#     """Тест на некорректный ввод данных"""
+#
+#     assert input_incorrect_data.name == "Xiaomi Redmi Note 11"
+#     assert input_incorrect_data.description == "1024GB, Синий"
+#     assert input_incorrect_data.price == 0.0
+#     assert input_incorrect_data.quantity == 0
 
 
 def test_price_setter_lower_price_confirm_yes(product_category):

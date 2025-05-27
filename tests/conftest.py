@@ -61,5 +61,5 @@ def firs_product_order():
         description="Заказ",
         products=[Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)],
         quantity_purchased=2,
-        total_cost=210000
+        total_cost=210000,
     )
