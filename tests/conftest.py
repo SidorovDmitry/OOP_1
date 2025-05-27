@@ -2,6 +2,7 @@ import pytest
 
 from src.category import Category
 from src.product import Product, Smartphone, LawnGrass
+from src.order import Order
 
 
 @pytest.fixture
@@ -51,3 +52,14 @@ def smartphone_item() -> Product:
 def lawngrass_item() -> Product:
     """осуществляет возврат Класс LawnGrass"""
     return LawnGrass("Зелёный ковер", "Газонная трава", 1000, 500, "Россия", "3 месяца", "Зеленая")
+
+
+@pytest.fixture
+def firs_product_order():
+    return Order(
+        name="Смартфоны",
+        description="Заказ",
+        products=[Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)],
+        quantity_purchased=2,
+        total_cost=210000
+    )
