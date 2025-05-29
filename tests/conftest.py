@@ -1,8 +1,8 @@
 import pytest
 
 from src.category import Category
-from src.product import Product, Smartphone, LawnGrass
 from src.order import Order
+from src.product import LawnGrass, Product, Smartphone
 
 
 @pytest.fixture
@@ -55,7 +55,7 @@ def lawngrass_item() -> Product:
 
 
 @pytest.fixture
-def firs_product_order():
+def firs_product_order() -> Order:
     return Order(
         name="Смартфоны",
         description="Заказ",

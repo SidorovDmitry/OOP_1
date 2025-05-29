@@ -1,5 +1,5 @@
-from src.product import Product
 from src.base_category import BaseCategory
+from src.product import Product
 
 
 class Category(BaseCategory):
