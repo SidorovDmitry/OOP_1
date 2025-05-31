@@ -35,6 +35,7 @@ OOP_1/                              # Корневая директория пр
 │   ├── __init__.py                 # 📦 Инициализация Python-пакета
 │   ├── base_category.py            # 🛒 Абстрактный класс для класса Category
 │   ├── base_product.py             # 🛒 Абстрактный класс для класса Product
+│   ├── class_exception.py          # 🏷️ Класс ZeroRunProduct (класс исключения)
 │   ├── category.py                 # 🏷️ Класс Category (категории товаров)
 │   ├── miksin_print.py             # 🏷️ Миксин для вывода информации в консоль
 │   ├── order.py                    # 🏷️ Логика работы с заказами
@@ -48,6 +49,7 @@ OOP_1/                              # Корневая директория пр
 │   ├── test_iter.py                # ✅ Тесты для iter.py
 │   ├── test_category.py            # ✅ Тесты для category.py
 │   ├── test_miksin_print.py        # ✅ Тесты для miksin_print.py
+│   ├── test_order.py               # ✅ Тесты для order.py
 │   └── test_product.py             # ✅ Тесты для product.py
 │
 ├── .coverage                       # 📊 Отчёт о покрытии кода тестами

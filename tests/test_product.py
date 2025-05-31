@@ -1,7 +1,9 @@
 from unittest.mock import patch
+
 import pytest
+
 from src.category import Category
-from src.product import Product, Smartphone, LawnGrass
+from src.product import LawnGrass, Product, Smartphone
 
 
 def test_out_data_product(input_data_bu_product):
@@ -13,13 +15,18 @@ def test_out_data_product(input_data_bu_product):
     assert input_data_bu_product.quantity == 5
 
 
-def test_incorrect_output(input_incorrect_data):
-    """Тест на некорректный ввод данных"""
+# def test_incorrect_output(input_incorrect_data):
+#     """Тест на некорректный ввод данных"""
+#
+#     assert input_incorrect_data.name == "Xiaomi Redmi Note 11"
+#     assert input_incorrect_data.description == "1024GB, Синий"
+#     assert input_incorrect_data.price == 0.0
+#     assert input_incorrect_data.quantity == 0
 
-    assert input_incorrect_data.name == "Xiaomi Redmi Note 11"
-    assert input_incorrect_data.description == "1024GB, Синий"
-    assert input_incorrect_data.price == 0.0
-    assert input_incorrect_data.quantity == 0
+def test_zero_quantity():
+    """Тест на вызов ошибки"""
+    with pytest.raises(ValueError):
+        Product("Test", "Desc", 100, 0)
 
 
 def test_price_setter_lower_price_confirm_yes(product_category):
@@ -61,12 +68,11 @@ def test_new_product_creates_new_if_no_duplicate():
     products_list = []
     product_data = {"name": "Ноутбук", "description": "Игровой", "price": "100000", "quantity": "3"}
     product = Product.new_product(product_data, products_list)
-
-    assert product in products_list  # Продукт должен быть добавлен в список
+    assert product in products_list
     assert len(products_list) == 1
 
 
-def test_smartfone_check(smartphone_item):
+def test_smartphone_check(smartphone_item):
     """Тест инициализации объекта класса Smartphone"""
     assert smartphone_item.name == "Iphone"
     assert smartphone_item.description == "Американский Смартфон"

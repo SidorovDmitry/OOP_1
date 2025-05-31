@@ -14,7 +14,10 @@ class Product(BaseProduct, PrintMixin):
         self.name = name
         self.description = description
         self.__price = price
-        self.quantity = quantity
+        if quantity > 0:
+            self.quantity = quantity
+        else:
+            raise ValueError("Товар с нулевым количеством не может быть добавлен")
         super().__init__()
 
     @classmethod
@@ -39,7 +42,7 @@ class Product(BaseProduct, PrintMixin):
         products_list.append(new_product)
         return new_product
 
-    @property  # type: ignore
+    @property
     def price(self):
         """Вызов цены в приватном статусе"""
         return self.__price
